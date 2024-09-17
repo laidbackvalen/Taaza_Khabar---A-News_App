@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/news_Fragment">
+
+    <fragment
+        android:id="@+id/details_Fragment2"
+        android:name="com.valenpatel.taazakhabar.views.fragments.Details_Fragment"
+        android:label="fragment_details_"
+        tools:layout="@layout/fragment_details_" />
+    <fragment
+        android:id="@+id/news_Fragment"
+        android:name="com.valenpatel.taazakhabar.views.fragments.News_Fragment"
+        android:label="fragment_news_"
+        tools:layout="@layout/fragment_news_" >
+        <action
+            android:id="@+id/action_news_Fragment_to_details_Fragment2"
+            app:destination="@id/details_Fragment2" />
+    </fragment>
+</navigation>
